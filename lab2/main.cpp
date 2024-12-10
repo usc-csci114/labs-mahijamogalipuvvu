@@ -26,6 +26,8 @@ int main(int argc, char* argv[])
 	
 	//add your code here
 	
+	cout << "enter the shape you want to draw: "
+	
 	//ask the user what shape the want to draw
 	//collect the required information
 	//instantiate the shape, draw it into the image

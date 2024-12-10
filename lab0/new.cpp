@@ -4,5 +4,5 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    cout << "Hello! Welcome to CSCI 114!" << endl;
+    cout << "This is my new document that I created." << endl;
 }

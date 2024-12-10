@@ -43,13 +43,38 @@ private:
 class Triangle : public Shape {
 public:
 	//What data does the constructor need?
-	Triangle(/* ?? */);
+	Triangle(Point tri[3], Color c);
 	bool inside(uint32_t x, uint32_t y); //we'll give you this code
 	BoundingBox getBoundingBox(); //how do you get the bounding box for a triangle?
 private:
+	Point m_tri[3];
 	//what data structures do we need to describe a triangle?
 };
 
 //Now follow this pattern and create a derived class for the Circle and Rectangle
+
+class Rectangle : public Shape {
+public:
+	//What data does the constructor need?
+	Rectangle(Point rect[4], Color c);
+	bool inside(uint32_t x, uint32_t y); //we'll give you this code
+	BoundingBox getBoundingBox(); //how do you get the bounding box for a triangle?
+private:
+	Point m_rect[4];
+	//what data structures do we need to describe a triangle?
+};
+
+class Circle : public Shape {
+public:
+	//What data does the constructor need?
+	Circle(Point center, unsigned int r, Color c);
+	bool inside(uint32_t x, uint32_t y); //we'll give you this code
+	BoundingBox getBoundingBox(); //how do you get the bounding box for a triangle?
+private:
+	Point m_center;
+	unsigned int m_r;
+	//what data structures do we need to describe a triangle?
+};
+
 
 #endif
